@@ -3,7 +3,7 @@ This repository contains Autoregressive Char Level Generative Models and Small E
 
 1. small_lm_decoder_transformer_multigpu.py - Model to predict the next token given input sequence of tokens.
    - Trainable on multi-gpus with distributed data parallelism
-   - Has same schema as seen in gpt2 model's state_dict (124M param)
+   - Has same schema as seen in gpt2 model's state_dict (124M param) of Transformer blocks (Multihead self attention with residual connections, layernorm, feedforward), embedding, position encoding layers
    - Detailed notes are present in SmallLMImplementation.ipynb
    
 3. char_level_transformer_scaled.py - This is a character level generative model built on Transformers, for sequence modeling. It looks at the context of input sequence and predicts the next likely character in the sequence.
