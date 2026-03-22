@@ -9,7 +9,7 @@ This repository contains Autoregressive Char Level Generative Models and Small E
 3. char_level_transformer_scaled.py - This is a character level generative model built on Transformers, for sequence modeling. It looks at the context of input sequence and predicts the next likely character in the sequence.
    -  This has 10M parameters and can be trained on single GPU or CPU.
    -  It uses 6 blocks of Multihead self-attention with 6 heads in each
-   -  Detailed notes are present in TransformerBasedCharacterLevelGenerativeModel.ipynb
+   -  Detailed notes are present in char_level_transformer_scaled.ipynb
 
 5. bigram.py - super simple bigram model that predicts next char based on input char
    - Trains neural network embeddings
